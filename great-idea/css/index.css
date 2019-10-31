@@ -87,12 +87,11 @@ h1{
 
 nav{
 	display: flex;
-	margin: 2% auto;
+	margin: 0 auto;
 	padding: 4% auto;
 	overflow: hidden;
 	align-items: center;
 	width: 100%;
-	align-content: stretch;
 }
 
 a:link, a:hover, a:active, a:visited{
@@ -103,9 +102,9 @@ a:link, a:hover, a:active, a:visited{
 }
 .introduction{
 	display: flex;
-	width: 75%;
+	width: 90%;
 	padding: 5% auto;
-	margin: 3%;
+	margin: 0 auto;
 	border-bottom: 3px solid gray;
 }
 
@@ -142,9 +141,9 @@ a:link, a:hover, a:active, a:visited{
 
 .copyright{
 	text-align: center;
-	width: 75%;
-	margin-left: 75px;
-	padding-left: 50px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 auto;
 }
 
 .servicesdescription{
@@ -173,18 +172,14 @@ a:link, a:hover, a:active, a:visited{
 .fact-sheet{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: left;
 	width: 80%;
 	margin: 5% auto;
-	flex-direction: column;
-	align-content: left;
+	flex-wrap: wrap;
 }
 
-.services-header-img{
-	display: flex;
-	margin: 5%;
-	align-items: right;
-}
+/*.services-header-img{
+}*/
 
 #services-fact-list{
 	list-style-type: circle;

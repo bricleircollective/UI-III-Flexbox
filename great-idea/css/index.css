@@ -66,22 +66,11 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 h1{
 	font-size: 80px;
-	display: block;
+	display: flex;
 	padding: 50% auto;
 	margin: 100px;
 	width: 80%;
 }
-
-h2{
-	font-size: 20px;
-	display: block;
-	padding: 50% auto;
-	margin: 30px;
-	padding: 10px;
-	width: 90%;
-	text-align: left;
-}
-
 .column .button{
 	-webkit-transitioni-duration: 0.4s;
 	transition-duration: 0.4s;
@@ -97,30 +86,27 @@ h2{
 }
 
 nav{
-	display: inline-block;
-	margin: 5% auto;
-	padding: 5% auto;
+	display: flex;
+	margin: 2% auto;
+	padding: 4% auto;
 	overflow: hidden;
-	background-color: yellow;
-}
-.sticky{
-	position:fixed;
-	top: 0;
+	align-items: center;
 	width: 100%;
+	align-content: stretch;
 }
 
 a:link, a:hover, a:active, a:visited{
-	color: red;
-	text-decoration: underline overline solid red;
+	color: darkgray;
+	text-decoration: none;
 	padding: 5% auto;
 	margin: 40px 40px;
 }
-.firstchunk{
-	display: inline-block;
+.introduction{
+	display: flex;
 	width: 75%;
 	padding: 5% auto;
 	margin: 3%;
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid gray;
 }
 
 .row {
@@ -139,9 +125,11 @@ a:link, a:hover, a:active, a:visited{
 }
 
 #bodyimage{
+	display: flex;
 	width: 100%;
 	margin: 10px;
 	padding: 10px;
+	align-content: stretch;
 }
 
 #contact{
@@ -149,7 +137,7 @@ a:link, a:hover, a:active, a:visited{
 	width: 75%;
 	margin: 10px;
 	padding: 10px;
-	border-top: 3px solid red;
+	border-top: 3px solid gray;
 }
 
 .copyright{
@@ -157,4 +145,47 @@ a:link, a:hover, a:active, a:visited{
 	width: 75%;
 	margin-left: 75px;
 	padding-left: 50px;
+}
+
+.servicesdescription{
+	width: 80%;
+	margin: 5%;
+}
+.servicesbody{
+	display: flex;
+	flex: 50%;
+	justify-content: space-between;
+	margin: 5%;
+}
+
+.servicescategories{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.servicescategories{
+	background-color: lightgray;
+	border: 1px solid gray;
+	margin: 10px;
+	width: 50%;
+}
+
+.fact-sheet{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 5% auto;
+	flex-direction: column;
+	align-content: left;
+}
+
+.services-header-img{
+	display: flex;
+	margin: 5%;
+	align-items: right;
+}
+
+#services-fact-list{
+	list-style-type: circle;
 }

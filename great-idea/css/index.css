@@ -76,7 +76,7 @@ h1{
 	transition-duration: 0.4s;
 	width: 20%;	
 	padding: 10px 10px 10px 10px;
-	margin: 0px;
+	margin: 150px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 .column .button:hover{
@@ -91,7 +91,7 @@ nav{
 	padding: 4% auto;
 	overflow: hidden;
 	align-items: center;
-	width: 100%;
+	width: 80%;
 }
 
 a:link, a:hover, a:active, a:visited{
@@ -109,52 +109,61 @@ a:link, a:hover, a:active, a:visited{
 }
 
 .row {
-	display: inline-flex;
-	margin: 10px 10px 10px 10px;
-	padding: 10px;
-	width: 75%;
+	display: flex;
+	margin: 6% auto;
+	padding: 5% auto;
+	width: 90%;
+	align-content: center;
   }
   
 .column {
-	flex: 100%;
+	flex: 90%;
 	margin: 10px 30px 10px 10px;
-	padding: 0px;
-	width: 100%;
+	padding: 5% auto;
+	width: 90%;
 	text-align: left;
+
 }
 
-#bodyimage{
+.middle-img{
 	display: flex;
 	width: 100%;
-	margin: 10px;
-	padding: 10px;
+	margin: 0 auto;
+	padding: 5% auto;
 	align-content: stretch;
 }
 
 #contact{
 	text-align: left;
-	width: 75%;
-	margin: 10px;
-	padding: 10px;
+	width: 90%;
+	margin: 6% auto;
+	padding-top: 25px;
 	border-top: 3px solid gray;
 }
 
 .copyright{
 	text-align: center;
 	width: 100%;
-	margin: 0 auto;
+	margin: 6% auto;
 	padding: 0 auto;
 }
 
+.services-header-img{
+	width: 100%;
+	margin: 6% auto;
+	padding: 0 auto;
+}
 .servicesdescription{
-	width: 80%;
-	margin: 5%;
+	width: 90%;
+	margin: 6%;
 }
 .servicesbody{
+	width: 90%;
 	display: flex;
 	flex: 50%;
 	justify-content: space-between;
 	margin: 5%;
+	padding: 5%;
 }
 
 .servicescategories{
@@ -165,22 +174,26 @@ a:link, a:hover, a:active, a:visited{
 .servicescategories{
 	background-color: lightgray;
 	border: 1px solid gray;
-	margin: 10px;
-	width: 50%;
+	margin: 6% auto;
+	padding: 6% auto;
+	width: 90%;
 }
 
 .fact-sheet{
 	display: flex;
-	justify-content: space-between;
-	align-items: left;
-	width: 80%;
+	flex-direction: row;
+	width: 45%;
 	margin: 5% auto;
 	flex-wrap: wrap;
+	align-items: left;
 }
 
-/*.services-header-img{
-}*/
-
-#services-fact-list{
-	list-style-type: circle;
+.facts-text{
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	margin: 5% auto;
+	flex-wrap: wrap;
+	align-items: left;
 }
+
